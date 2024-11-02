@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styletubes.css">
+    <title>Subscription</title>
+    <style>
+        /* Custom Styles */
+        .card-custom {
+            color: white;
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .single-plan,
+        .duo-plan,
+        .family-plan {
+            background-color: #343a40;
+            border-radius: 15px;
+        }
+
+        .card-custom:hover {
+            transform: scale(1.05);
+        }
+
+        .card-custom h5,
+        .card-custom p {
+            color: white;
+        }
+
+        .btn-custom {
+            background-color: rgb(238, 0, 255);
+            border-color: rgb(248, 23, 233);
+        }
+
+        .plan-details {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid" >
+        <a class="navbar-brand bi" href="home.html">M00BIE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="movies.html">Movies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="series.html">Series</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-disabled="true" href="premiumtestv2.html"><i class="bi bi-gem"></i></a>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <i class="bi pad bi-search"></i>
+            <a href="notifikasi.html"><i class="bi pad bi-bell"></i></a>
+            <div class="dropdown">
+                <a class="btn drop" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi pad bi-three-dots"></i></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="profil.html">Profil</a></li>
+                <li><a class="dropdown-item" href="setting.html">Setting</a></li>
+                </ul>
+            </div>
+            </form>
+        </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <!-- Premium Content -->
+    <div class="container">
+        <h2 class="text-center mb-4" style="color: white;">Premium Subscriptions</h2>
+
+        <div class="row">
+            <!-- Single Subscription -->
+            <div class="col-md-4">
+                <div class="card mb-4 card-custom single-plan">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Single Plan</h5>
+                        <p class="card-text">Enjoy premium content for one user.</p>
+                        <p class="card-text">Harga: Rp 9.999/bulan</p>
+                        <a href="subscribe_single.html" class="btn btn-primary btn-custom">Subscribe</a>
+                    </div>
+                    <div class="plan-details">
+                        <p>Includes unlimited access to movies, series, and exclusive content for a single user.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Duo Subscription -->
+            <div class="col-md-4">
+                <div class="card mb-4 card-custom duo-plan">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Duo Plan</h5>
+                        <p class="card-text">Perfect for two users. Share the joy of premium content.</p>
+                        <p class="card-text">Harga: Rp 14.999/bulan</p>
+                        <a href="subscribe_duo.html" class="btn btn-primary btn-custom">Subscribe</a>
+                    </div>
+                    <div class="plan-details">
+                        <p>Double the fun! Access for two users with all premium features included.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Subscription -->
+            <div class="col-md-4">
+                <div class="card mb-4 card-custom family-plan">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Family Plan</h5>
+                        <p class="card-text">Great for the whole family. Up to five users can enjoy premium content.</p>
+                        <p class="card-text">Harga: Rp 24.999/bulan</p>
+                        <a href="subscribe_family.html" class="btn btn-primary btn-custom">Subscribe</a>
+                    </div>
+                    <div class="plan-details">
+                        <p>Unlimited access for the entire family! Enjoy premium content with up to five user profiles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- FOOTER -->
+    <footer class="highlight">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5">
+                    <h4>About Us</h4><br>
+                    <p>Moobie is an online database of information related to films, television series, podcasts, home
+                        videos, video games, and streaming content online, including cast, production crew and personal
+                        biographies, plot summaries, trivia, ratings, and fan and critical reviews.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4><br>
+                    <p>Email&#58; contact&#64;m00bie.com<br>Phone&#58; &#43;62 &#40;010&#41; 345&#45;6789</p>
+                </div>
+                <div class="col-md">
+                    <h4>Social  Media</h4><br>
+                    <a href="#" class="bi pad bi-facebook"></a>
+                    <a href="#" class="bi pad bi-twitter"></a>
+                    <a href="#" class="bi pad bi-instagram"></a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2023 M00BIE. All rights reserved.</p>
+        </div>
+    </footer>   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
